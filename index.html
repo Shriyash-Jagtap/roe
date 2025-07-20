@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetailPro Correlation Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .result {
+            background-color: #e8f5e8;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .json-link {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .json-link a {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .json-link a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>RetailPro Correlation Analysis</h1>
+        <p>This analysis examines the correlation between different business drivers and net sales for RetailPro retail chain.</p>
+        
+        <h2>Analysis Results</h2>
+        <div class="result">
+            <h3>Strongest Correlation Found:</h3>
+            <p><strong>Avg_Basket - Net_Sales</strong></p>
+            <p>Correlation coefficient: <strong>0.592933</strong></p>
+            <p>This indicates a moderate positive correlation between average basket size and net sales.</p>
+        </div>
+        
+        <h2>All Correlations Calculated:</h2>
+        <ul>
+            <li>Promo_Spend - Avg_Basket: -0.137960 (weak negative)</li>
+            <li>Promo_Spend - Net_Sales: -0.115655 (weak negative)</li>
+            <li>Avg_Basket - Net_Sales: 0.592933 (moderate positive)</li>
+        </ul>
+        
+        <div class="json-link">
+            <a href="correlation_result.json" target="_blank">View Raw JSON Data</a>
+        </div>
+    </div>
+</body>
+</html>
